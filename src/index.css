@@ -1,0 +1,6 @@
+@import 'wowjs/css/libs/animate.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+

@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+#Info {
+  background-color:#191717;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  animation: slideBackground 10s linear infinite;
+
+}
+
+@keyframes slideBackground {
+  0% {
+    background-position: 0 50%;
+  }
+
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+
+
+
+/* Apply the animation to all screen sizes */
+@media (min-width: 0px) {
+  .background {
+    animation: slideBackground 15s linear infinite;
+  }
+}

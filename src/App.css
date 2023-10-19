@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+}
+
+#Home {
+  background-image: url('../src/assets/Back.png');
+ background-repeat: repeat;
+  background-position: center center;
+  animation: slideBackground 10s linear infinite;
+  
+}
+
+@keyframes slideBackground {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+
+
+
+/* Apply the animation to all screen sizes */
+@media (min-width: 0px) {
+  .background {
+    animation: slideBackground 15s linear infinite;
+  }
+}

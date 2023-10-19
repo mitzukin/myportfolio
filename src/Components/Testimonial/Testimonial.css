@@ -1,0 +1,13 @@
+#image {
+    
+    animation: slideLeftRight 2s linear infinite;
+  }
+  
+  @keyframes slideLeftRight {
+    0%, 100% {
+      transform: translateY(-100px);
+    }
+    50% {
+      transform: translateY(20px); /* Adjust the distance you want to move */
+    }
+  }
