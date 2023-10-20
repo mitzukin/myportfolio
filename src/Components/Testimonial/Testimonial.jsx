@@ -4,13 +4,14 @@ import Image from "/src/assets/Question.png";
 
 const AboutPage = () => {
   return (
-    <div className="flex justify-center p-4 pb-20 mx-auto font-Roboto align-center md:mx-32 lg:mx-56">
-      <div className="flex flex-wrap mx-2 md:w-96 lg:w-full">
-        <div className="w-full px-4 mb-4 xl:w-3/5 ">
+    <div className="flex justify-center p-4 pb-20 mx-0 font-Roboto align-center md:mx-10 lg:mx-56">
+      <div className="flex flex-wrap md:w-96 lg:w-full">
+        <div className="w-full px-2 mb-4 xl:w-3/5 ">
           <div
-            className="p-8 mt-10 duration-300 bg-opacity-10 bg-secondary rounded-xl md:hover:bg-opacity-100 "
-            data-aos="fade-right"
-            data-aos-duration="1000"
+            className="p-5 mt-10 duration-300 bg-opacity-10 bg-secondary rounded-xl md:hover:bg-opacity-100 "
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
           >
             <h1 className="mb-6 text-2xl font-semibold text-center text-custom-blue md:text-left">
               As A Student
@@ -25,9 +26,10 @@ const AboutPage = () => {
           </div>
 
           <div
-            className="p-8 mt-6 bg-opacity-30 bg-secondary rounded-xl md:hover:bg-opacity-100"
-            data-aos="fade-right"
-            data-aos-duration="1500"
+            className="p-5 mt-6 bg-opacity-30 bg-secondary rounded-xl md:hover:bg-opacity-100"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
           >
             <h1 className="mb-6 text-2xl font-semibold text-center text-green-500 md:text-left">
               Exciting IT Field
@@ -40,9 +42,10 @@ const AboutPage = () => {
             </p>
           </div>
           <div
-            className="p-8 mt-6 bg-opacity-10 bg-secondary rounded-xl md:hover:bg-opacity-100"
-            data-aos="fade-right"
-            data-aos-duration="2000"
+            className="p-5 mt-6 bg-opacity-10 bg-secondary rounded-xl md:hover:bg-opacity-100"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
           >
             <h1 className="mb-6 text-2xl font-semibold text-center text-custom-blue md:text-left">
               Web Development Speed and Efficiency

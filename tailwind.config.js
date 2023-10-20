@@ -35,6 +35,7 @@ export default {
       screens: {
         'tablet': '1100x', 
         'ipad': '768px',
+        'xs': '320px',
       },
     },
   },
