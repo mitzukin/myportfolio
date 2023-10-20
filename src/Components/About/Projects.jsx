@@ -116,7 +116,7 @@ const Projects = () => {
               THE TOOLS THAT I AM USING:
             </h1>
             <div
-              className="flex flex-col items-center justify-center gap-2 mt-10 mb-10 md:flex-row"
+              className="flex flex-col items-center justify-center gap-2 pb-10 mt-10 md:flex-row"
               data-aos="fade-up"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"

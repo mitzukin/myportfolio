@@ -3,9 +3,12 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import { BsTelephonePlusFill, BsMailbox2 } from "react-icons/bs";
 import { HiLocationMarker } from "react-icons/hi";
+import { useState } from "react";
 
 const Contact = () => {
   const form = useRef();
+  const [successPopup, setSuccessPopup] = useState(false);
+  const [errorPopup, setErrorPopup] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -21,12 +24,30 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           console.log("message sent.");
+          form.current.reset();
+
+          setSuccessPopup(true);
+
+          // Hide the success popup after a few seconds (adjust the timeout as needed)
+          setTimeout(() => {
+            setSuccessPopup(false);
+          }, 5000);
         },
         (error) => {
           console.log(error.text);
+          console.log("message sending failed.");
+
+          // Show the error popup
+          setErrorPopup(true);
+
+          // Hide the error popup after a few seconds (adjust the timeout as needed)
+          setTimeout(() => {
+            setErrorPopup(false);
+          }, 5000);
         }
       );
   };
+
   return (
     <div>
       <section id="Contact" className="bg-Below">
@@ -41,44 +62,54 @@ const Contact = () => {
                   Wanna Hire Me?
                 </p>
 
+                <div
+                  className="text-sm text-center text-green-600 popup success-popup"
+                  style={{ display: successPopup ? "block" : "none" }}
+                >
+                  <p>Message sent successfully! Thank you!</p>
+                </div>
+                <div
+                  className="text-sm text-center text-red-600 popup error-popup"
+                  style={{ display: errorPopup ? "block" : "none" }}
+                >
+                  <p>Message sending failed. Please try again.</p>
+                </div>
+
                 <form ref={form} onSubmit={sendEmail}>
                   <div>
                     <label className="block mb-2 text-sm font-medium text-gray-300">
                       Name: (Optional)
                       <input
-                      name="user_name"
-                      type="name"
-                      className="block w-full p-3 mb-3 text-sm text-gray-300 placeholder-gray-500 bg-transparent border rounded-lg shadow-sm placeholder:text-xs placeholder:opacity-60"
-                      placeholder="Juan Dela Cruz"
-                      required
-                    />
+                        name="user_name"
+                        type="name"
+                        className="block w-full p-3 mb-3 text-sm text-gray-300 placeholder-gray-500 bg-transparent border rounded-lg shadow-sm placeholder:text-xs placeholder:opacity-60"
+                        placeholder="Juan Dela Cruz"
+                        required
+                      />
                     </label>
-                    
                   </div>
                   <div>
                     <label className="block mb-2 text-sm font-medium text-gray-300 ">
                       Email:
                       <input
-                      name="user_email"
-                      type="text"
-                      className="block w-full p-3 text-sm text-gray-300 placeholder-gray-500 bg-transparent border rounded-lg shadow-sm placeholder:text-xs placeholder:opacity-60"
-                      placeholder="email@mail.com"
-                      required
-                    />
+                        name="user_email"
+                        type="text"
+                        className="block w-full p-3 text-sm text-gray-300 placeholder-gray-500 bg-transparent border rounded-lg shadow-sm placeholder:text-xs placeholder:opacity-60"
+                        placeholder="email@mail.com"
+                        required
+                      />
                     </label>
-                    
                   </div>
                   <div className="sm:col-span-2">
                     <label className="block mb-2 text-sm font-medium text-gray-900 ">
                       Your message
                       <textarea
-                      name="message"
-                      rows="6"
-                      className="shadow-sm border border-opacity-20 bg-transparent text-sm rounded-lg block w-full placeholder-gray-500 p-2.5 text-gray-300  placeholder:text-xs placeholder:opacity-60"
-                      placeholder="Leave a comment..."
-                    ></textarea>
+                        name="message"
+                        rows="6"
+                        className="shadow-sm border border-opacity-20 bg-transparent text-sm rounded-lg block w-full placeholder-gray-500 p-2.5 text-gray-300  placeholder:text-xs placeholder:opacity-60"
+                        placeholder="Leave a comment..."
+                      ></textarea>
                     </label>
-                   
                   </div>
                   <button
                     type="submit"
@@ -92,7 +123,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="mt-4 lg:w-1/2 lg:mt-0">
-            <div className="p-4 ml-10 rounded-lg md:ml-64 lg:mt-16" >
+            <div className="p-4 ml-10 rounded-lg md:ml-64 lg:mt-16">
               <h1 className="mt-32 font-extrabold text-gray-300 text-11xl">
                 Info
               </h1>

@@ -20,7 +20,7 @@ function App() {
       <section id="Home">
         <div
           className="flex flex-col md:flex-row "
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-offset="500"
           data-aos-easing="ease-in-sine"
         >
@@ -38,7 +38,7 @@ function App() {
 
               <h1
                 className="mt-10 text-center text-gray-300 font-Roboto font-Inter md:text-xl"
-                data-aos="fade-right"
+                data-aos="fade-up"
                 data-aos-offset="100"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="200"
@@ -50,7 +50,7 @@ function App() {
               </h1>
               <p
                 className="mt-1 text-center text-gray-300 font-Roboto font-Inter md:text-xl"
-                data-aos="fade-right"
+                data-aos="fade-up"
                 data-aos-offset="100"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="300"
@@ -60,7 +60,7 @@ function App() {
               <a
                 href="#Testimonial"
                 className="flex"
-                data-aos="fade-right"
+                data-aos="fade-up"
                 data-aos-offset="100"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="500"
@@ -130,7 +130,7 @@ function App() {
               </h1>
               <p
                 className="p-2 text-justify text-gray-300 font-Roboto md:text-2xl lg:text-md md:p-10"
-                data-aos="zoom-in-left"
+                data-aos="zoom-in"
                 data-aos-duration="2000"
               >
                 {" "}

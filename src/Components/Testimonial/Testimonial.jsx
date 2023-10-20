@@ -63,10 +63,7 @@ const AboutPage = () => {
           <div
             id="image"
             className="mt-20 md:mt-56 lg:mt-40"
-            data-aos="fade-left"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="500"
-            data-aos-duration="500"
+
           >
             <img src={Image} alt="" className="h-100 w-100" />
           </div>

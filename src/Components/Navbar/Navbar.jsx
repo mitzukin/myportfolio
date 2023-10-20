@@ -2,16 +2,13 @@ import React from "react";
 import { FaHome, FaInfo } from "react-icons/fa";
 import { BiMessageAltDetail } from "react-icons/bi";
 import { FcServices } from "react-icons/fc";
-import SmoothScroll from "smooth-scroll";
+
 import { IoMdContact } from "react-icons/io";
 import { CgMenuHotdog } from "react-icons/cg";
 import { useState } from "react";
 
 const Navbar = () => {
-  const scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 1000,
-    speedAsDuration: true,
-  });
+  
   const [isNavOpen, setIisNavOpen] = useState(false);
   const Navtoggle = () => {
     setIisNavOpen(!isNavOpen);
@@ -19,7 +16,7 @@ const Navbar = () => {
   return (
     <div>
       <div
-        className="fixed flex justify-center p-3 rounded-md top-1 right-1 align-center bg-secondary text-custom-blue md:top-1"
+        className="fixed flex justify-center p-3 rounded-md top-2 right-2 align-center bg-secondary text-custom-blue md:top-1"
         onClick={() => {
           setTimeout(Navtoggle, 300);
         }}

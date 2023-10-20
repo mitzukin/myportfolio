@@ -9,6 +9,8 @@ import { useState } from "react";
 import Webdev from "../../assets/Webdev.png";
 import Designing from "../../assets/Designing.png";
 import Programming from "../../assets/Programming.png";
+
+
 const About = () => {
   const [isDesignVisible, setIsDesignVisible] = useState(false);
   const [isWebsiteVisible, setIsWebsiteVisible] = useState(false);
