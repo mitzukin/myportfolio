@@ -23,18 +23,14 @@ const Navbar = () => {
         onClick={() => {
           setTimeout(Navtoggle, 300);
         }}
-        data-aos="fade-up"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
+        
       >
         <CgMenuHotdog size={20} />
       </div>
 
       {isNavOpen && (
         <div
-          data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          
           className="fixed flex flex-col items-center justify-between w-12 px-2 py-1 mt-10 bg-opacity-50 rounded-full md:mt-32 lg:mt-56 md:w-16 left-1 md:left-2 top-32 h-84 bg-secondary"
           style={{ zIndex: 9999 }}
         >

@@ -45,37 +45,40 @@ const Contact = () => {
                   <div>
                     <label className="block mb-2 text-sm font-medium text-gray-300">
                       Name: (Optional)
-                    </label>
-                    <input
+                      <input
                       name="user_name"
                       type="name"
                       className="block w-full p-3 mb-3 text-sm text-gray-300 placeholder-gray-500 bg-transparent border rounded-lg shadow-sm placeholder:text-xs placeholder:opacity-60"
                       placeholder="Juan Dela Cruz"
                       required
                     />
+                    </label>
+                    
                   </div>
                   <div>
                     <label className="block mb-2 text-sm font-medium text-gray-300 ">
                       Email:
-                    </label>
-                    <input
+                      <input
                       name="user_email"
                       type="text"
                       className="block w-full p-3 text-sm text-gray-300 placeholder-gray-500 bg-transparent border rounded-lg shadow-sm placeholder:text-xs placeholder:opacity-60"
                       placeholder="email@mail.com"
                       required
                     />
+                    </label>
+                    
                   </div>
                   <div className="sm:col-span-2">
                     <label className="block mb-2 text-sm font-medium text-gray-900 ">
                       Your message
-                    </label>
-                    <textarea
+                      <textarea
                       name="message"
                       rows="6"
                       className="shadow-sm border border-opacity-20 bg-transparent text-sm rounded-lg block w-full placeholder-gray-500 p-2.5 text-gray-300  placeholder:text-xs placeholder:opacity-60"
                       placeholder="Leave a comment..."
                     ></textarea>
+                    </label>
+                   
                   </div>
                   <button
                     type="submit"
