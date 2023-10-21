@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+
 import "./App.css";
 import profile from "../src/assets/Profile.webp";
 import Facebook from "./assets/Fb.png";
@@ -13,10 +14,32 @@ import message from "./assets/Message.png";
 import Projects from "./Components/About/Projects";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import LoadingScreen from './LoadingScreen';
+
+
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Simulate loading for 2 seconds (you should replace this with your actual loading logic)
+  useEffect(() => {
+    const loadingTimeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => {
+      clearTimeout(loadingTimeout);
+    };
+  }, []);
+  
+
   return (
+    
     <div id="main">
+      {isLoading ? (
+        <LoadingScreen />
+      ) : ( 
+        <>
       <section id="Home">
         <div
           className="flex flex-col md:flex-row "
@@ -25,7 +48,7 @@ function App() {
           data-aos-easing="ease-in-sine"
         >
           <div className="w-full p-4 md:w-1/2">
-            <div className="flex flex-col mt-16 background-container md:mt-40">
+            <div className="flex flex-col mt-24 background-container md:mt-40">
               <h1 className="text-2xl text-center text-gray-300 font-Roboto font-Inter md:text-4xl ">
                 Hello!
               </h1>
@@ -184,8 +207,11 @@ function App() {
         <Contact />
         <Footer />
       </section>
-      <Navbar />
+      <Navbar /> 
+      </>
+      )}
     </div>
+  
   );
 }
 export default App;

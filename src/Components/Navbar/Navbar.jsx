@@ -10,7 +10,7 @@ import { CgMenuHotdog } from "react-icons/cg";
 const Navbar = () => {
   useEffect(() => {
     const scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 1500,
+      speed: 500,
       speedAsDuration: true,
       // Add more options here if needed
     });

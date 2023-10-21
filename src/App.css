@@ -22,7 +22,13 @@ body {
   }
 }
 
-
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff; /* Set your desired background color */
+}
 
 
 /* Apply the animation to all screen sizes */
