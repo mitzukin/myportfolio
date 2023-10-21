@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react"; // Import useEffect and useState
 import { FaHome, FaInfo } from "react-icons/fa";
 import { BiMessageAltDetail } from "react-icons/bi";
 import { FcServices } from "react-icons/fc";
+import SmoothScroll from 'smooth-scroll';
 
 import { IoMdContact } from "react-icons/io";
 import { CgMenuHotdog } from "react-icons/cg";
-import { useState } from "react";
 
 const Navbar = () => {
-  
-  const [isNavOpen, setIisNavOpen] = useState(false);
+  useEffect(() => {
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1500,
+      speedAsDuration: true,
+      // Add more options here if needed
+    });
+  }, []);
+
+  const [isNavOpen, setIsNavOpen] = useState(false); // Fixed the typo here
+
   const Navtoggle = () => {
-    setIisNavOpen(!isNavOpen);
+    setIsNavOpen(!isNavOpen);
   };
+
   return (
     <div>
       <div
@@ -48,12 +57,12 @@ const Navbar = () => {
               </div>
             </a>
             <a href="#Project" data-scroll>
-              <div className="p-2 mt-5 text-gray-300 rounded-full cursor-pointer hover:bg-secondary hover:text-custom-blue">
+              <div className="p-2 mt-5 text-gray-300 rounded-full cursor-pointer hover.bg-secondary hover:text-custom-blue">
                 <FcServices size={18} />
               </div>
             </a>
             <a href="#Contact" data-scroll>
-              <div className="p-2 mt-5 mb-5 text-gray-300 rounded-full cursor-pointer hover:bg-secondary hover:text-custom-blue">
+              <div className="p-2 mt-5 mb-5 text-gray-300 rounded-full cursor-pointer hover.bg-secondary hover:text-custom-blue">
                 <IoMdContact size={18} />
               </div>
             </a>
