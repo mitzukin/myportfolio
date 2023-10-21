@@ -21,7 +21,6 @@ import LoadingScreen from './LoadingScreen';
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
-  // Simulate loading for 2 seconds (you should replace this with your actual loading logic)
   useEffect(() => {
     const loadingTimeout = setTimeout(() => {
       setIsLoading(false);
@@ -31,16 +30,22 @@ function App() {
       clearTimeout(loadingTimeout);
     };
   }, []);
+
+
   
 
   return (
     
-    <div id="main">
+    <div id="main" className='leading-5'>
+      
       {isLoading ? (
         <LoadingScreen />
       ) : ( 
+        
         <>
+        
       <section id="Home">
+      
         <div
           className="flex flex-col md:flex-row "
           data-aos="fade-up"
@@ -145,20 +150,20 @@ function App() {
             <div className="mt-56 mb-56 md:mt-60">
               <h1
                 className="mb-5 text-5xl font-bold text-gray-300 md:text-7xl lg:text-9xl "
-                data-aos="zoom-in"
-                data-aos-duration="2000"
+                data-aos="fade-up"
+                data-aos-duration="1000"
               >
                 Step <span className="text-custom-blue"> Into </span>The{" "}
                 <span className="text-green-500 ">World</span> Of Mine
               </h1>
               <p
-                className="p-2 text-justify text-gray-300 font-Roboto md:text-2xl lg:text-md md:p-10"
-                data-aos="zoom-in"
-                data-aos-duration="2000"
+                className="p-1 leading-5 text-justify text-gray-300 max-w-prose font-Roboto md:text-2xl lg:text-md md:p-10"
+                data-aos="fade-up"
+                data-aos-duration="1000"
               >
                 {" "}
                 &emsp;&emsp;A student aspiring to become a{" "}
-                <span className="text-sm font-semibold text-custom-blue md:text-2xl">
+                <span className="text-sm font-semibold leading-5 text-custom-blue md:text-2xl">
                   Website Developer and UI/UX Designer.
                 </span>{" "}
                 on a mission to turn ideas into reality. Discover my passion for
@@ -171,7 +176,7 @@ function App() {
         </div>
       </section>
 
-      <section id="Testimonial">
+      <section id="Testimonial" className='leading-5'>
         <div className="pt-32 font-Roboto bg-Below">
           <div
             className=""
@@ -206,12 +211,17 @@ function App() {
       <section id="Contact">
         <Contact />
         <Footer />
+        
       </section>
+      
       <Navbar /> 
+      
       </>
+      
       )}
+      
     </div>
-  
+    
   );
 }
 export default App;

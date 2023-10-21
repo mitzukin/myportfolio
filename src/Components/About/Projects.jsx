@@ -14,16 +14,14 @@ const Projects = () => {
         <h1
           className="mt-10 text-6xl font-bold text-center text-gray-300 md:text-11xl"
           data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+                data-aos-duration="1000"
         >
           Sample Works
         </h1>
         <p
           className="mx-2 mt-10 mb-16 text-center text-gray-300 font-Roboto"
           data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+                data-aos-duration="1000"
         >
           I'm eager to dive deeper into the world of design, and I have a strong
           desire to expand my knowledge and skills in this field.
@@ -34,8 +32,7 @@ const Projects = () => {
             <div
               className="p-2 bg-opacity-50 rounded-md bg-primary"
               data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
+                data-aos-duration="1000"
             >
               <img src={Nike} alt="" className="rounded-sm" />
             </div>
@@ -43,8 +40,7 @@ const Projects = () => {
             <div
               className="p-2 bg-opacity-50 rounded-md bg-primary"
               data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
+                data-aos-duration="1000"
             >
               <img src={Music} alt="" className="rounded-sm" />
             </div>
@@ -52,8 +48,7 @@ const Projects = () => {
             <div
               className="p-2 bg-opacity-50 rounded-md bg-primary"
               data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
+                data-aos-duration="1000"
             >
               <img src={Greek} alt="" className="rounded-sm" />
             </div>
@@ -61,8 +56,7 @@ const Projects = () => {
             <div
               className="p-2 bg-opacity-50 rounded-md bg-primary"
               data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
+                data-aos-duration="1000"
             >
               <img src={Decoration} alt="" className="rounded-sm" />
             </div>
@@ -71,16 +65,14 @@ const Projects = () => {
             <h1
               className="mt-16 text-6xl font-bold text-center text-green-500"
               data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
+                data-aos-duration="1000"
             >
               Story <span className="text-custom-blue">Behind</span>
             </h1>
             <p
               className="px-3 py-3 mx-1 mt-10 text-justify text-gray-300 text-md xl:mx-32 xl:px-80 xl:py-10 md:mx-20 lg:mx-28 font-Roboto"
               data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
+                data-aos-duration="1000"
             >
               &emsp; &emsp;Credit goes to the owner of Nike. The day I designed
               the Reason Store was the day I began to learn about frameworks
@@ -110,8 +102,7 @@ const Projects = () => {
             <h1
               className="text-lg font-semibold text-center text-gray-300 font-Robot"
               data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
+                data-aos-duration="1000"
             >
               THE TOOLS THAT I AM USING:
             </h1>

@@ -10,7 +10,6 @@ import Webdev from "../../assets/Webdev.png";
 import Designing from "../../assets/Designing.png";
 import Programming from "../../assets/Programming.png";
 
-
 const About = () => {
   const [isDesignVisible, setIsDesignVisible] = useState(false);
   const [isWebsiteVisible, setIsWebsiteVisible] = useState(false);
@@ -38,8 +37,7 @@ const About = () => {
         <h1
           className="text-xl font-semibold text-center text-custom-blue"
           data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
         >
           Learn Kin
         </h1>
@@ -47,8 +45,7 @@ const About = () => {
         <h1
           className="text-4xl font-semibold text-center text-gray-300"
           data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
         >
           Get To Know Me
         </h1>
@@ -63,8 +60,7 @@ const About = () => {
           <div
             className="flex items-center justify-center mx-2 mt-20 duration-300 rounded-lg bg-primary md:mx-24 md:px-10 lg:mt-56 hover:bg-transparent"
             data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
           >
             <img
               src={mypic}
@@ -79,16 +75,14 @@ const About = () => {
             <h1
               className="mt-20 mb-5 text-lg font-semibold text-center text-gray-300"
               data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
+              data-aos-duration="1000"
             >
               Let me share a bit about who I am:
             </h1>
             <div
               className="p-1 md:p-10 "
               data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
+              data-aos-duration="1000"
             >
               <h1 className="mt-5 text-5xl text-center text-gray-300 font-super-bold font-custom">
                 SKILLS <br />
@@ -101,8 +95,7 @@ const About = () => {
                   <div
                     className="p-5 m-3 duration-500 rounded-lg md:p-3 md:w-full lg:w-full xl:w-1/3 "
                     data-aos="fade-up"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1000"
                   >
                     <h1 className="text-2xl font-semibold text-green-500 font-custom">
                       01
@@ -110,7 +103,7 @@ const About = () => {
                     <p className="mt-2 text-3xl font-bold text-center text-custom-blue md:text-xl">
                       Graphic Design
                     </p>
-                    <p className="px-1 py-5 mb-1 text-sm text-right">
+                    <p className="px-1 py-5 mb-1 text-sm text-right md:text-left">
                       As a student with skills in graphic design, I enjoy
                       applying my creative talents to various projects and
                       honing my design abilities.
@@ -134,8 +127,7 @@ const About = () => {
                   <div
                     className="p-5 m-3 duration-500 rounded-lg md:p-3 md:w-full lg:w-full xl:w-1/3 "
                     data-aos="fade-up"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1000"
                   >
                     <h1 className="text-2xl font-semibold text-green-500 font-custom">
                       02
@@ -143,7 +135,7 @@ const About = () => {
                     <p className="mt-2 text-3xl font-bold text-center text-custom-blue md:text-xl">
                       Website Development
                     </p>
-                    <p className="px-1 py-5 mb-1 text-sm text-right">
+                    <p className="px-1 py-5 mb-1 text-sm text-right md:text-left">
                       I am new to web development, UX / UI and I'm excited to
                       learn, explore, grow in this field, creating and building
                       websites.
@@ -167,8 +159,7 @@ const About = () => {
                   <div
                     className="p-5 m-3 duration-500 rounded-lg md:p-3 md:w-full lg:w-full xl:w-1/3 "
                     data-aos="fade-up"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1000"
                   >
                     <h1 className="text-2xl font-semibold text-green-500 font-custom">
                       03
@@ -176,7 +167,7 @@ const About = () => {
                     <p className="mt-2 text-3xl font-bold text-center text-custom-blue md:text-xl">
                       Basic Programming
                     </p>
-                    <p className="px-1 py-5 mb-1 text-sm text-right">
+                    <p className="px-1 py-5 mb-1 text-sm text-right md:text-left">
                       A basic knowledge of programming languages, which I'm
                       eager to apply and expand upon as I continue my journey in
                       web development.
@@ -206,9 +197,11 @@ const About = () => {
           id="Graphic"
         >
           {isDesignVisible && (
-            <div className="text-gray-300 rounded-lg " data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
+            <div
+              className="text-gray-300 rounded-lg "
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <h1 className="pt-10 mt-20 text-4xl font-semibold text-center text-green-500 ustom-blue">
                 Designing
               </h1>
@@ -232,9 +225,12 @@ const About = () => {
           )}
 
           {isWebsiteVisible && (
-            <div className="text-gray-300 rounded-lg " id="Graphic" data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
+            <div
+              className="text-gray-300 rounded-lg "
+              id="Graphic"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <h1 className="pt-10 mt-20 text-4xl font-semibold text-center text-green-500 ustom-blue">
                 Website
               </h1>
@@ -258,9 +254,12 @@ const About = () => {
           )}
 
           {isProgVisible && (
-            <div className="text-gray-300 rounded-lg " id="Graphic" data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
+            <div
+              className="text-gray-300 rounded-lg "
+              id="Graphic"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <h1 className="pt-10 mt-20 text-4xl font-semibold text-center text-green-500 ustom-blue">
                 Programming
               </h1>
@@ -288,16 +287,14 @@ const About = () => {
         <h1
           className="mt-56 mb-10 text-5xl text-center text-gray-300 font-super-bold font-custom"
           data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
         >
           Hobbies and Talents
         </h1>
         <p
           className="px-16 mb-6 text-center text-gray-300"
           data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
         >
           I have a diverse range of interests that keep me engaged and
           entertained.{" "}
@@ -307,8 +304,7 @@ const About = () => {
           <div
             className="p-4 rounded-lg bg-opacity-20 bg-primary"
             data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
           >
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-slate-300 ">
               <TbMusic size={32} color="#23272a" />
@@ -332,8 +328,7 @@ const About = () => {
           <div
             className="p-4 rounded-lg bg-opacity-20 bg-primary"
             data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
           >
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-slate-300 ">
               <MdOutlineSportsBasketball size={32} color="#23272a" />
@@ -355,8 +350,7 @@ const About = () => {
           <div
             className="p-4 rounded-lg bg-opacity-20 bg-primary"
             data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
           >
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-slate-300 ">
               <MdGames size={32} color="#23272a" />
@@ -378,8 +372,7 @@ const About = () => {
           <div
             className="p-4 rounded-lg bg-opacity-20 bg-primary"
             data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
+                data-aos-duration="1000"
           >
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-slate-300 ">
               <RiMovie2Fill size={32} color="#23272a" />

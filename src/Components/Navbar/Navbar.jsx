@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react"; // Import useEffect and useState
 import { FaHome, FaInfo } from "react-icons/fa";
 import { BiMessageAltDetail } from "react-icons/bi";
-import { FcServices } from "react-icons/fc";
-import SmoothScroll from 'smooth-scroll';
-
+import { BsPersonWorkspace } from "react-icons/bs";
+import SmoothScroll from "smooth-scroll";
 import { IoMdContact } from "react-icons/io";
 import { CgMenuHotdog } from "react-icons/cg";
 
 const Navbar = () => {
   useEffect(() => {
     const scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 500,
+      speed: 200,
       speedAsDuration: true,
       // Add more options here if needed
     });
@@ -21,6 +20,7 @@ const Navbar = () => {
   const Navtoggle = () => {
     setIsNavOpen(!isNavOpen);
   };
+  
 
   return (
     <div>
@@ -29,14 +29,15 @@ const Navbar = () => {
         onClick={() => {
           setTimeout(Navtoggle, 300);
         }}
-        
       >
         <CgMenuHotdog size={20} />
       </div>
 
       {isNavOpen && (
         <div
-          
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
           className="fixed flex flex-col items-center justify-between w-12 px-2 py-1 mt-10 bg-opacity-50 rounded-full md:mt-32 lg:mt-56 md:w-16 left-1 md:left-2 top-32 h-84 bg-secondary"
           style={{ zIndex: 9999 }}
         >
@@ -58,7 +59,7 @@ const Navbar = () => {
             </a>
             <a href="#Project" data-scroll>
               <div className="p-2 mt-5 text-gray-300 rounded-full cursor-pointer hover.bg-secondary hover:text-custom-blue">
-                <FcServices size={18} />
+                <BsPersonWorkspace size={18} />
               </div>
             </a>
             <a href="#Contact" data-scroll>

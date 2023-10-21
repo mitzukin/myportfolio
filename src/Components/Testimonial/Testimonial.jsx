@@ -4,14 +4,13 @@ import Image from "/src/assets/Question.png";
 
 const AboutPage = () => {
   return (
-    <div className="flex justify-center p-4 pb-20 mx-0 font-Roboto align-center md:mx-10 lg:mx-56">
+    <div className="flex justify-center p-4 pb-20 mx-0 leading-5 font-Roboto align-center md:mx-10 lg:mx-56">
       <div className="flex flex-wrap md:w-96 lg:w-full">
         <div className="w-full px-2 mb-4 xl:w-3/5 ">
           <div
             className="p-5 mt-10 duration-300 bg-opacity-10 bg-secondary rounded-xl md:hover:bg-opacity-100 "
             data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
+                data-aos-duration="500"
           >
             <h1 className="mb-6 text-2xl font-semibold text-center text-custom-blue md:text-left">
               As A Student
@@ -28,8 +27,7 @@ const AboutPage = () => {
           <div
             className="p-5 mt-6 bg-opacity-30 bg-secondary rounded-xl md:hover:bg-opacity-100"
             data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
+                data-aos-duration="500"
           >
             <h1 className="mb-6 text-2xl font-semibold text-center text-green-500 md:text-left">
               Exciting IT Field
@@ -44,8 +42,7 @@ const AboutPage = () => {
           <div
             className="p-5 mt-6 bg-opacity-10 bg-secondary rounded-xl md:hover:bg-opacity-100"
             data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
+                data-aos-duration="500"
           >
             <h1 className="mb-6 text-2xl font-semibold text-center text-custom-blue md:text-left">
               Web Development Speed and Efficiency

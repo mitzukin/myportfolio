@@ -124,7 +124,7 @@ const Contact = () => {
           </div>
           <div className="mt-4 lg:w-1/2 lg:mt-0">
             <div className="p-4 ml-10 rounded-lg md:ml-64 lg:mt-16">
-              <h1 className="mt-32 font-extrabold text-gray-300 text-11xl">
+              <h1 className="mt-32 mb-32 font-extrabold text-gray-300 text-11xl">
                 Info
               </h1>
               <div>
