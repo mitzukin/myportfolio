@@ -84,7 +84,7 @@ const About = () => {
             </h1>
             <div className="container p-2 mx-auto mt-10 mb-0">
               <div className="w-full md:w-full lg:w-full xl:flex">
-                <div className="relative p-10 m-3 duration-500 rounded-lg md:p-3 md:w-full lg:w-full xl:w-1/3 ">
+                <div className="relative p-10 m-3 mt-10 duration-500 rounded-lg md:p-3 md:w-full lg:w-full xl:w-1/3 ">
                   <h1 className="text-2xl font-semibold text-green-500 font-custom">
                     01
                   </h1>
@@ -112,7 +112,7 @@ const About = () => {
                   </div>
                 </div>
 
-                <div className="relative p-10 m-3 duration-500 rounded-lg md:p-3 md:w-full lg:w-full xl:w-1/3 ">
+                <div className="relative p-10 m-3 mt-10 duration-500 rounded-lg md:p-3 md:w-full lg:w-full xl:w-1/3 ">
                   <h1 className="text-2xl font-semibold text-green-500 font-custom">
                     02
                   </h1>
@@ -138,7 +138,7 @@ const About = () => {
                     </a>
                   </div>
                 </div>
-                <div className="relative p-10 m-3 duration-500 bg-opacity-50 rounded-lg md:p-3 md:w-full lg:w-full xl:w-1/3 ">
+                <div className="relative p-10 m-3 mt-10 duration-500 bg-opacity-50 rounded-lg md:p-3 md:w-full lg:w-full xl:w-1/3 ">
                   <h1 className="text-2xl font-semibold text-green-500 font-custom">
                     03
                   </h1>
