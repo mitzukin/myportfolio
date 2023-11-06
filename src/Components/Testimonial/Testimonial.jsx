@@ -12,10 +12,10 @@ const AboutPage = () => {
             data-aos="fade-up"
                 data-aos-duration="500"
           >
-            <h1 className="mb-6 text-2xl font-semibold text-center text-custom-blue md:text-left">
+            <h1 className="mb-3 text-2xl font-semibold text-center text-custom-blue md:text-left">
               As A Student
             </h1>
-            <p className="text-sm text-justify text-gray-300 ">
+            <p className="px-2 py-5 text-sm text-justify text-gray-300 ">
               &emsp;&emsp;As a student diving into the world of web development,
               I've been on an incredible learning journey. It's like unlocking a
               new dimension of creativity and problem-solving. Building websites
@@ -29,10 +29,10 @@ const AboutPage = () => {
             data-aos="fade-up"
                 data-aos-duration="500"
           >
-            <h1 className="mb-6 text-2xl font-semibold text-center text-green-500 md:text-left">
+            <h1 className="mb-3 text-2xl font-semibold text-center text-green-500 md:text-left">
               Exciting IT Field
             </h1>
-            <p className="text-sm text-justify text-gray-300 ">
+            <p className="px-2 py-5 text-sm text-justify text-gray-300 ">
               &emsp;&emsp;I love working in the IT field. It's like being on the
               cutting edge of the digital world. Every day is a new adventure
               filled with technology, problem-solving, and cool gadgets. I can't
@@ -44,10 +44,10 @@ const AboutPage = () => {
             data-aos="fade-up"
                 data-aos-duration="500"
           >
-            <h1 className="mb-6 text-2xl font-semibold text-center text-custom-blue md:text-left">
+            <h1 className="mb-3 text-2xl font-semibold text-center text-custom-blue md:text-left">
               Web Development Speed and Efficiency
             </h1>
-            <p className="text-sm text-justify text-gray-300 ">
+            <p className="px-2 py-5 text-sm text-justify text-gray-300 ">
               &emsp;&emsp;React Vite and Tailwind CSS left me amazed with their
               speed, efficiency, and elegance when used together. I
               wholeheartedly endorse this dynamic duo if you're seeking to
